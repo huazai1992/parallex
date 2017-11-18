@@ -7,24 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68559B6D59FC441435DD74D4 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 68559C60B7697183E7A71D86 /* .gitignore */; };
 		F0755FCE1FA07AA900AC17E9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0755FCD1FA07AA900AC17E9 /* main.swift */; };
+		F0D925341FC04DB40059432D /* memory.metal in Sources */ = {isa = PBXBuildFile; fileRef = F0A8D8471FC020E500071ADB /* memory.metal */; };
+		F0D925361FC0500B0059432D /* memory.metal in Resources */ = {isa = PBXBuildFile; fileRef = F0A8D8471FC020E500071ADB /* memory.metal */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		F0755FC81FA07AA900AC17E9 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
+		68559C60B7697183E7A71D86 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
 		F0755FCA1FA07AA900AC17E9 /* parallex */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = parallex; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0755FCD1FA07AA900AC17E9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F0A8D8471FC020E500071ADB /* memory.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = memory.metal; sourceTree = "<group>"; };
+		F0A8D84B1FC0233B00071ADB /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		F0A8D84C1FC0233B00071ADB /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		F0A8D84D1FC0233B00071ADB /* MetalPerformanceShaders.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalPerformanceShaders.framework; path = System/Library/Frameworks/MetalPerformanceShaders.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +39,8 @@
 			children = (
 				F0755FCC1FA07AA900AC17E9 /* parallex */,
 				F0755FCB1FA07AA900AC17E9 /* Products */,
+				F0A8D84A1FC0233B00071ADB /* Frameworks */,
+				68559C60B7697183E7A71D86 /* .gitignore */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +55,20 @@
 		F0755FCC1FA07AA900AC17E9 /* parallex */ = {
 			isa = PBXGroup;
 			children = (
+				F0A8D8471FC020E500071ADB /* memory.metal */,
 				F0755FCD1FA07AA900AC17E9 /* main.swift */,
 			);
 			path = parallex;
+			sourceTree = "<group>";
+		};
+		F0A8D84A1FC0233B00071ADB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0A8D84C1FC0233B00071ADB /* Metal.framework */,
+				F0A8D84B1FC0233B00071ADB /* MetalKit.framework */,
+				F0A8D84D1FC0233B00071ADB /* MetalPerformanceShaders.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,7 +80,7 @@
 			buildPhases = (
 				F0755FC61FA07AA900AC17E9 /* Sources */,
 				F0755FC71FA07AA900AC17E9 /* Frameworks */,
-				F0755FC81FA07AA900AC17E9 /* CopyFiles */,
+				F0D925351FC04FFD0059432D /* Resources */,
 			);
 			buildRules = (
 			);
@@ -115,11 +124,24 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		F0D925351FC04FFD0059432D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0D925361FC0500B0059432D /* memory.metal in Resources */,
+				68559B6D59FC441435DD74D4 /* .gitignore in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F0755FC61FA07AA900AC17E9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0D925341FC04DB40059432D /* memory.metal in Sources */,
 				F0755FCE1FA07AA900AC17E9 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
