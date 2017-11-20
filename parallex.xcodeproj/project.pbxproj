@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		68559B6D59FC441435DD74D4 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 68559C60B7697183E7A71D86 /* .gitignore */; };
+		F00D7DFB1FC26F9300F3F4ED /* memory.metal in Sources */ = {isa = PBXBuildFile; fileRef = F0A8D8471FC020E500071ADB /* memory.metal */; };
 		F0755FCE1FA07AA900AC17E9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0755FCD1FA07AA900AC17E9 /* main.swift */; };
-		F0D925341FC04DB40059432D /* memory.metal in Sources */ = {isa = PBXBuildFile; fileRef = F0A8D8471FC020E500071ADB /* memory.metal */; };
 		F0D925361FC0500B0059432D /* memory.metal in Resources */ = {isa = PBXBuildFile; fileRef = F0A8D8471FC020E500071ADB /* memory.metal */; };
 /* End PBXBuildFile section */
 
@@ -141,7 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0D925341FC04DB40059432D /* memory.metal in Sources */,
+				F00D7DFB1FC26F9300F3F4ED /* memory.metal in Sources */,
 				F0755FCE1FA07AA900AC17E9 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
